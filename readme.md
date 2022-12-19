@@ -40,16 +40,19 @@ The following applications are provided to demonstrate a subset of the capabilit
 
 | Category | Item | Description | Release Type |
 | --- | --- | ---- |---- |
+|  apps | [blank_quickstart](./apps/blank_quickstart/readme.md) | Legato Blank Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|  apps | [legato_adventure](./apps/legato_adventure/readme.md) | Legato Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|  apps | [legato_benchmark](./apps/legato_benchmark/readme.md) | Legato Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|  apps | [legato_ext_res](./apps/legato_ext_res/readme.md) | Legato Graphics Library External Resources Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |  apps | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-
 
 ____
 
 [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32cz_ca/blob/master/mplab_harmony_license.md)
-[![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32cz_ca/releases/latest)
-[![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32cz_ca/releases/latest)
-[![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32cz_ca/graphs/commit-activity)
-[![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/gfx.svg)]()
+[![Latest release](https://img.shields.io/github/release/mchpgfx/legato.docs.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx/tree/v3.12.0)
+[![Latest release date](https://img.shields.io/github/release-date/mchpgfx/legato.docs.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx/tree/v3.12.0)
+[![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/gfx_apps_pic32cz_ca.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32cz_ca/graphs/commit-activity)
+[![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/gfx_apps_pic32cz_ca.svg)]()
 
 ____
 

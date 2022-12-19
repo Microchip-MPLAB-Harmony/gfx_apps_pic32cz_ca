@@ -1,0 +1,23 @@
+package:
+  format-version: "1.0.0"
+  name: "gfx_apps_pic32cz_ca"
+  version: "3.0.0-E1"
+  type: "application"
+  status: "production"
+
+  dependencies:
+    - name: "gfx"
+      type: "package"
+      version: "3.12.0"
+    - name: "usb"
+      type: "package"
+      version: "3.11.0-E1"
+    - name: "bsp"
+      type: "package"
+      version: "v3.15.0-E1"
+    - name: "dev_packs"
+      type: "package"
+      version: "v3.15.0-E1"
+    - name: "csp"
+      type: "package"
+      version: "v3.15.0-E1"
