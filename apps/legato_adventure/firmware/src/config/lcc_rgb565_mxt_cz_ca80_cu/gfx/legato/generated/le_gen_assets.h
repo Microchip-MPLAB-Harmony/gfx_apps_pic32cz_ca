@@ -541,17 +541,19 @@ extern leRasterFont NotoSans_Regular;
  * Height:       21
  * Baseline:     12
  * Style:        Antialias
- * Glyph Count:  56
- * Range Count:  12
+ * Glyph Count:  54
+ * Range Count:  14
  * Glyph Ranges: 0x20
                  0x28-0x29
                  0x2C-0x2D
                  0x30-0x3A
-                 0x41-0x45
+                 0x41-0x44
                  0x47-0x49
-                 0x4C-0x4E
+                 0x4C
+                 0x4E
                  0x50-0x53
-                 0x55-0x58
+                 0x55-0x57
+                 0x5A
                  0x61-0x69
                  0x6C-0x75
                  0x78-0x79

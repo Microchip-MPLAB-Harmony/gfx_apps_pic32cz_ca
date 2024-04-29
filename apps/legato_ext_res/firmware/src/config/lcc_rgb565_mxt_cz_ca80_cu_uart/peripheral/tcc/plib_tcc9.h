@@ -147,7 +147,9 @@ bool TCC9_PWM32bitPeriodSet(uint32_t period);
 
 uint32_t TCC9_PWM32bitPeriodGet(void);
 
-void TCC9_PWM32bitCounterSet(uint32_t count);
+void TCC9_PWM32bitCounterSet(uint32_t countVal);
+
+uint32_t TCC9_PWM32bitCounterGet(void);
 
 __STATIC_INLINE bool TCC9_PWM32bitDutySet(TCC9_CHANNEL_NUM channel, uint32_t duty)
 {

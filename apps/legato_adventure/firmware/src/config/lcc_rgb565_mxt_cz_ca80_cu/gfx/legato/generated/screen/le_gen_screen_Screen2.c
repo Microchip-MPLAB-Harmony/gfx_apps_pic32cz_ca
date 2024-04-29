@@ -53,35 +53,35 @@ leResult screenShow_Screen2(void)
     root0->fn->addChild(root0, (leWidget*)Screen2_ImageWidget1);
 
     Screen2_LabelWidget0 = leLabelWidget_New();
-    Screen2_LabelWidget0->fn->setPosition(Screen2_LabelWidget0, 6, 9);
+    Screen2_LabelWidget0->fn->setPosition(Screen2_LabelWidget0, 14, 36);
     Screen2_LabelWidget0->fn->setSize(Screen2_LabelWidget0, 234, 31);
     Screen2_LabelWidget0->fn->setBackgroundType(Screen2_LabelWidget0, LE_WIDGET_BACKGROUND_NONE);
     Screen2_LabelWidget0->fn->setString(Screen2_LabelWidget0, (leString*)&string_String_Demonstrated);
     root0->fn->addChild(root0, (leWidget*)Screen2_LabelWidget0);
 
     Screen2_LabelWidget1 = leLabelWidget_New();
-    Screen2_LabelWidget1->fn->setPosition(Screen2_LabelWidget1, 10, 40);
-    Screen2_LabelWidget1->fn->setSize(Screen2_LabelWidget1, 200, 40);
+    Screen2_LabelWidget1->fn->setPosition(Screen2_LabelWidget1, 13, 75);
+    Screen2_LabelWidget1->fn->setSize(Screen2_LabelWidget1, 242, 40);
     Screen2_LabelWidget1->fn->setBackgroundType(Screen2_LabelWidget1, LE_WIDGET_BACKGROUND_NONE);
     Screen2_LabelWidget1->fn->setString(Screen2_LabelWidget1, (leString*)&string_String_Device);
     root0->fn->addChild(root0, (leWidget*)Screen2_LabelWidget1);
 
     Screen2_LabelWidget3 = leLabelWidget_New();
-    Screen2_LabelWidget3->fn->setPosition(Screen2_LabelWidget3, 9, 69);
+    Screen2_LabelWidget3->fn->setPosition(Screen2_LabelWidget3, 13, 147);
     Screen2_LabelWidget3->fn->setSize(Screen2_LabelWidget3, 360, 40);
     Screen2_LabelWidget3->fn->setBackgroundType(Screen2_LabelWidget3, LE_WIDGET_BACKGROUND_NONE);
     Screen2_LabelWidget3->fn->setString(Screen2_LabelWidget3, (leString*)&string_String_ColorDepth);
     root0->fn->addChild(root0, (leWidget*)Screen2_LabelWidget3);
 
     Screen2_LabelWidget4 = leLabelWidget_New();
-    Screen2_LabelWidget4->fn->setPosition(Screen2_LabelWidget4, 9, 95);
+    Screen2_LabelWidget4->fn->setPosition(Screen2_LabelWidget4, 13, 112);
     Screen2_LabelWidget4->fn->setSize(Screen2_LabelWidget4, 290, 40);
     Screen2_LabelWidget4->fn->setBackgroundType(Screen2_LabelWidget4, LE_WIDGET_BACKGROUND_NONE);
     Screen2_LabelWidget4->fn->setString(Screen2_LabelWidget4, (leString*)&string_String_Library);
     root0->fn->addChild(root0, (leWidget*)Screen2_LabelWidget4);
 
     Screen2_LabelWidget5 = leLabelWidget_New();
-    Screen2_LabelWidget5->fn->setPosition(Screen2_LabelWidget5, 10, 123);
+    Screen2_LabelWidget5->fn->setPosition(Screen2_LabelWidget5, 13, 184);
     Screen2_LabelWidget5->fn->setSize(Screen2_LabelWidget5, 430, 40);
     Screen2_LabelWidget5->fn->setBackgroundType(Screen2_LabelWidget5, LE_WIDGET_BACKGROUND_NONE);
     Screen2_LabelWidget5->fn->setString(Screen2_LabelWidget5, (leString*)&string_String_Features);

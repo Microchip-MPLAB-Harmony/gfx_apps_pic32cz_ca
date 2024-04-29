@@ -275,6 +275,7 @@
           <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/device.h</itemPath>
           <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/user.h</itemPath>
           <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/configuration.h</itemPath>
+          <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
@@ -411,6 +412,41 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1"
+                     displayName="lcc_rgb565_mxt_cz_ca80_cu.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/BSP_PIC32CZ_CA80_Curiosity_Ultra.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/core.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/ebi.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_disp_pdatm4301b_480x272.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_legato.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/legato_gfx_pda_tm4301b.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/le_gfx_driver_lcc.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/project.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/rtc.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/sercom0.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/tcc0.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/tcc9.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/harmony-manifest-failure.yml</itemPath>
+      <itemPath>legato_quickstart_cz_ca80_cu_wqvga.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -747,42 +783,6 @@
       <itemPath>../src/app.c</itemPath>
       <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/pin_configurations.csv</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <logicalFolder name="f1"
-                     displayName="lcc_rgb565_mxt_cz_ca80_cu.mhc"
-                     projectFiles="true">
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/BSP_PIC32CZ_CA80_Curiosity_Ultra.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/core.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/drv_i2c.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/ebi.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/evsys.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_disp_pdatm4301b_480x272.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_hal_le.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_legato.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/gfx_maxtouch_controller.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/HarmonyCore.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/legato_gfx_pda_tm4301b.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/le_gfx_driver_lcc.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/project.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/rtc.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/sercom0.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/sys_input.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/sys_time.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/tcc0.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/lcc_rgb565_mxt_cz_ca80_cu.mhc/tcc9.yml</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/pin_configurations.csv</itemPath>
-      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/harmony-manifest-success.yml</itemPath>
-      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu/harmony-manifest-failure.yml</itemPath>
-      <itemPath>legato_quickstart_cz_ca80_cu_wqvga.mc3</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -795,14 +795,14 @@
         <targetDevice>PIC32CZ8110CA80208</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ri4hybrid</platformTool>
+        <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.20</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CZ-CA80_DFP" vendor="Microchip" version="1.0.17"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="PIC32CZ-CA80_DFP" vendor="Microchip" version="1.2.150"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1137,7 +1137,9 @@
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="freeze.timers" value="false"/>
         <property key="hwtoolclock.clock.frequency" value="4"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
@@ -1182,6 +1184,7 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programefuse" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
@@ -1201,6 +1204,7 @@
       </Tool>
       <pkob4hybrid>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UpdateOptions"
@@ -1209,12 +1213,16 @@
                   value="Press to select which tool pack to use"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
-        <property key="communication.speed" value="1.0"/>
+        <property key="communication.speed" value="2.000"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -1234,7 +1242,7 @@
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
+                  value="${programoptions.preservedataflash.ranges}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -1243,6 +1251,7 @@
         <property key="programoptions.program.otpconfig" value="false"/>
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
@@ -1261,7 +1270,9 @@
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="hwtoolclock.clock.frequency" value="4"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="hwtoolclock.instructionspeed" value="4"/>
@@ -1281,8 +1292,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-9fffffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/harmony3_apps/gfx_apps_pic32cz_ca/apps/legato_quickstart/firmware/le_qs_cz_ca80_cu_tm4301b.X/debug/lcc_rgb565_mxt_cz_ca80_cu/le_qs_cz_ca80_cu_tm4301b_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -1304,19 +1313,12 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programefuse" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
-        <property key="tracecontrol.etmtracesetupfile" value=""/>
-        <property key="tracecontrol.etmtracesetupfiledbx" value=""/>
-        <property key="tracecontrol.include.timestamp" value="summarydataenabled"/>
-        <property key="tracecontrol.itm.baudrate2" value="1"/>
-        <property key="tracecontrol.select" value="0"/>
-        <property key="tracecontrol.stallontracebufferfull" value="false"/>
-        <property key="tracecontrol.tracebufmax" value="546000"/>
-        <property key="tracecontrol.tracefile" value="defmplabxtrace.log"/>
-        <property key="tracecontrol.tracefilemax" value="10000000"/>
         <property key="voltagevalue" value="3.25"/>
         <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
       </ri4hybrid>

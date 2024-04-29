@@ -499,28 +499,8 @@ void _DRV_USBHS_DEVICE_Initialize
         /* Disable all interrupts */
         PLIB_USBHS_InterruptEnableSet(usbID,(USBHS_GEN_INTERRUPT)0x0, (USBHS_EPTXRX_INTERRUPT)0x0, (USBHS_EPTXRX_INTERRUPT)0x0);
     }
+    _DRV_USBHS_CLOCK_CONTROL_SETUP_DEVICE_MODE(usbID );  
 
-    /* IDVAL is the source of ID */
-    ((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_CTRLA |= USBHS_CTRLA_IDOVEN(1); 
-
-    /* ID override value is 1 (B plug) */
-    ((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_CTRLA |= USBHS_CTRLA_IDVAL(1);
-
-    /* Enable module */
-    ((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_CTRLA |= USBHS_CTRLA_ENABLE(1);
-
-    /* Software must poll this bit to know when the operation completes. */
-    while ((((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_SYNCBUSY & USBHS_SYNCBUSY_ENABLE_Msk) == USBHS_SYNCBUSY_ENABLE_Msk)
-    {
-    }
-    /* PHY is in on (operational power state) */
-    while ((((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_STATUS & USBHS_STATUS_PHYON_Msk ) == 0)
-    {
-    }
-    /* PHY is ready for USB activity */
-    while ((((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_STATUS & USBHS_STATUS_PHYRDY_Msk) == 0)
-    {
-    }
     
     /* PHY24.OTGOFF controls OTG threshold detection.
      * When OTGOFF=1, OTG VBUS monitoring (vbus valid, A valid, B valid, session end)
@@ -654,20 +634,16 @@ void DRV_USBHS_DEVICE_RemoteWakeupStart
 (
     DRV_HANDLE handle
 )
-{
-    DRV_USBHS_OBJ * hDriver = NULL;
-    
+{   
+    USBHS_MODULE_ID usbID = USBHS_NUMBER_OF_MODULES;
+    DRV_USBHS_OBJ * hDriver =  NULL;
     if( (DRV_HANDLE_INVALID !=  handle) && (NULL != ((DRV_USBHS_CLIENT_OBJ *)handle)) )
     {
         if(((DRV_USBHS_CLIENT_OBJ *)handle)->inUse)
         {
             hDriver = ((DRV_USBHS_CLIENT_OBJ *)handle)->hDriver;
-
-            /* Added to avoid build compilation issue */
-            hDriver = hDriver;
-   
-            /* Commented till PLIB implementation is completed */
-            //PLIB_USB_ResumeSignalingEnable(hDriver->usbDrvCommonObj.usbID);            
+            usbID = hDriver->usbDrvCommonObj.usbID;
+            ((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_POWER |= USBHS_POWER_RESUME_Msk;
         }
         else
         {
@@ -686,18 +662,14 @@ void DRV_USBHS_DEVICE_RemoteWakeupStop
 )
 {
     DRV_USBHS_OBJ * hDriver =  NULL;
-    
+    USBHS_MODULE_ID usbID = USBHS_NUMBER_OF_MODULES;
     if( (DRV_HANDLE_INVALID !=  handle) && (NULL != ((DRV_USBHS_CLIENT_OBJ *)handle)) )
     {
         if(((DRV_USBHS_CLIENT_OBJ *)handle)->inUse)
         {
             hDriver = ((DRV_USBHS_CLIENT_OBJ *)handle)->hDriver;
-
-            /* Added to avoid build compilation issue */
-            hDriver = hDriver;
-            
-            /* Commented till PLIB implementation is completed */
-            //PLIB_USB_ResumeSignalingDisable(hDriver->usbDrvCommonObj.usbID);
+            usbID = hDriver->usbDrvCommonObj.usbID;
+            ((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_POWER &= ~(USBHS_POWER_RESUME_Msk);
         }
         else
         {
@@ -709,6 +681,7 @@ void DRV_USBHS_DEVICE_RemoteWakeupStop
         SYS_DEBUG_MESSAGE(SYS_ERROR_INFO, "\r\nUSBHS Driver: Invalid client in DRV_USBHS_DEVICE_RemoteWakeupStop()");
     }
 }
+
 
 // *****************************************************************************
 /* Function:
@@ -794,6 +767,7 @@ void _DRV_USBHS_DEVICE_AttachStateMachine
               (DRV_USBHS_OPMODE_DEVICE == hDriver->usbDrvCommonObj.operationMode))   
         {
             PLIB_USBHS_InterruptEnableSet(hDriver->usbDrvCommonObj.usbID, (USBHS_GEN_INTERRUPT)0xF, (USBHS_EPTXRX_INTERRUPT)0x0, (USBHS_EPTXRX_INTERRUPT)0x0);
+            ((usbhs_registers_t*)usbID)->ENDPOINT0.USBHS_INTENSET = USBHS_INTENSET_DMA_Msk | USBHS_INTENSET_USB_Msk;
         }
         
         _DRV_USBHS_PersistentInterruptSourceClear(hDriver->usbDrvCommonObj.interruptSource);

@@ -59,7 +59,7 @@ extern "C" {
 #define LE_DEFAULT_COLOR_MODE                LE_COLOR_MODE_RGB_565
 #define LE_TOUCH_ORIENTATION                 0
 #define LE_RENDER_ORIENTATION                0
-#define LE_DRIVER_LAYER_MODE                 0
+#define LE_DRIVER_LAYER_MODE                 1
 #define LE_DYNAMIC_VTABLES                   0
 
 #define LE_ASSERT_ENABLE                     0
@@ -81,7 +81,7 @@ extern "C" {
 #define LE_ASSET_DECODER_PALETTE_CACHE_SIZE  32768
 #define LE_ASSET_DECODER_MASK_CACHE_SIZE     128
 #define LE_ASSET_DECODER_BLEND_CACHE_SIZE    128
-#define LE_JPEG_DECODER_CACHE_SIZE           2048
+#define LE_JPEG_DECODER_CACHE_SIZE           8192
 #define LE_RASTERFONT_GLYPH_CACHE_SIZE       4096
 #endif
 
@@ -130,7 +130,7 @@ extern "C" {
 
 // variable heap configuration
 #define LE_VARIABLEHEAP_DEBUGLEVEL         0
-#define LE_VARIABLEHEAP_SIZE               32000
+#define LE_VARIABLEHEAP_SIZE               64000
 #define LE_VARIABLEHEAP_MINALLOCSIZE       32
 #define LE_VARIABLEHEAP_ALIGNMENT          4
 #define LE_VARIABLEHEAP_BESTFIT            1
@@ -155,7 +155,7 @@ extern "C" {
 // renderer config
 #define LE_ALPHA_BLENDING_ENABLED          1
 #define LE_SCRATCH_BUFFER_COUNT            1
-#define LE_SCRATCH_BUFFER_SIZE_KB          48
+#define LE_SCRATCH_BUFFER_SIZE_KB          64
 #define LE_SCRATCH_BUFFER_PADDING          0
 #define LE_SCRATCH_BIG_ENDIAN              0
 #define LE_USE_ARC_SCAN_FILL               1

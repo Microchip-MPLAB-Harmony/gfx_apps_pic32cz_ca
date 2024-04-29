@@ -65,6 +65,9 @@ extern void __attribute__((weak,long_call, alias("Dummy_App_Func"))) __xc32_on_b
 
 /* Linker defined variables */
 extern uint32_t __svectors;
+#if defined (__REINIT_STACK_POINTER)
+extern uint32_t _stack;
+#endif
 
 /* MISRAC 2012 deviation block end */
 
@@ -83,16 +86,24 @@ __STATIC_INLINE void __attribute__((optimize("-O1"))) TCM_Enable(void)
     __DSB();
     __ISB();
 }
+#ifndef RAM_START_ADDR
+#define RAM_START_ADDR FLEXRAM_ADDR
+#endif
+
 #if defined ECC_INIT_START
 #define START_ADDR  ECC_INIT_START
 #else
-#define START_ADDR  FLEXRAM_ADDR
+#define START_ADDR  RAM_START_ADDR
+#endif
+
+#ifndef RAM_SIZE
+#define RAM_SIZE FLEXRAM_SIZE
 #endif
 
 #if defined ECC_INIT_LEN
 #define INIT_LEN  ECC_INIT_LEN
 #else
-#define INIT_LEN  FLEXRAM_SIZE
+#define INIT_LEN  RAM_SIZE
 #endif
 
 __STATIC_INLINE void  __attribute__((optimize("-O1")))  RAM_Initialize(void)
@@ -130,11 +141,11 @@ __STATIC_INLINE void  __attribute__((optimize("-O1")))  RAM_Initialize(void)
 #if (__ARM_FP==14) || (__ARM_FP==4)
 
 /* Enable FPU */
-__STATIC_INLINE void FPU_Enable(void)
+__STATIC_INLINE void __attribute__((optimize("-O1"))) FPU_Enable(void)
 {
     uint32_t primask = __get_PRIMASK();
     __disable_irq();
-     SCB->CPACR |= (((uint32_t)0xFU) << 20);
+    SCB->CPACR |= (((uint32_t)0xFU) << 20);
     __DSB();
     __ISB();
 
@@ -168,7 +179,7 @@ void __attribute__((optimize("-O1"), section(".text.Reset_Handler"), long_call, 
 
 #if defined (__REINIT_STACK_POINTER)
     /* Initialize SP from linker-defined _stack symbol. */
-    __asm__ volatile ("ldr sp, =_stack" : : : "sp");
+    __set_MSP((uint32_t)&_stack);
 
 #ifdef SCB_VTOR_TBLOFF_Msk
     /* Buy stack for locals */

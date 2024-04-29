@@ -62,10 +62,10 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 #define APP_SPRITE_STEP_X  20
 #define APP_SPRITE_OFFSET 8
-#define APP_IDLE_SPRITE_DELAY 100
+#define APP_IDLE_SPRITE_DELAY 10
 #define APP_JUMP_SPRITE_DELAY 0
 #define APP_HURT_SPRITE_DELAY 10
-#define APP_RUN_SPRITE_DELAY 0
+#define APP_RUN_SPRITE_DELAY 15
 #define APP_DIZZY_SPRITE_DELAY 40
 
 int32_t spriteIndex = 0;
@@ -296,8 +296,8 @@ void Screen1_OnUpdate()
 
                 APP_SPRITE_ANCHOR_MIN = 0 - APP_SPRITE_OFFSET;
 
-                handleAnimation = SYS_TIME_CallbackRegisterMS(MainScreen_HandleAnimation, 0, 6, SYS_TIME_PERIODIC);
-                handleLocomotion = SYS_TIME_CallbackRegisterMS(MainScreen_HandleLocomotion, 0, 2, SYS_TIME_PERIODIC);
+                handleAnimation = SYS_TIME_CallbackRegisterMS(MainScreen_HandleAnimation, 0, 8, SYS_TIME_PERIODIC);
+                handleLocomotion = SYS_TIME_CallbackRegisterMS(MainScreen_HandleLocomotion, 0, 40, SYS_TIME_PERIODIC);
                 
                 screenState = SCREEN_RUNNING;
             }

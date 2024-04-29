@@ -347,6 +347,7 @@
           <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/definitions.h</itemPath>
           <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/user.h</itemPath>
           <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/configuration.h</itemPath>
+          <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
@@ -484,6 +485,45 @@
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
     </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1"
+                     displayName="lcc_rgb565_mxt_cz_ca80_cu_uart.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/BSP_PIC32CZ_CA80_Curiosity_Ultra.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/core.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/drv_usbhs_index.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/ebi.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_disp_pdatm4301b_480x272.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_legato.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/legato_gfx_pda_tm4301b.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/le_gfx_driver_lcc.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/peripheral_usb_0.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/project.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/rtc.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sercom0.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sqi1.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/tcc0.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/tcc9.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/usb_device.yml</itemPath>
+        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/usb_device_cdc.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>legato_x_r_cz_ca80_cu_tm4301b.mc3</itemPath>
+      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/harmony-manifest-success.yml</itemPath>
+    </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
@@ -508,7 +548,6 @@
           <logicalFolder name="driver" displayName="driver" projectFiles="true">
             <logicalFolder name="i2c" displayName="i2c" projectFiles="true">
               <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/driver/i2c/src/drv_i2c.c</itemPath>
-              <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/driver/i2c/src/drv_i2c_local.h</itemPath>
             </logicalFolder>
             <logicalFolder name="input" displayName="input" projectFiles="true">
               <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/driver/input/drv_maxtouch.c</itemPath>
@@ -851,46 +890,6 @@
       <itemPath>../src/app_qspi.h</itemPath>
       <itemPath>../src/app_setup.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <logicalFolder name="f1"
-                     displayName="lcc_rgb565_mxt_cz_ca80_cu_uart.mhc"
-                     projectFiles="true">
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/BSP_PIC32CZ_CA80_Curiosity_Ultra.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/core.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/drv_i2c.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/drv_usbhs_index.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/ebi.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/evsys.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_disp_pdatm4301b_480x272.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_hal_le.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_legato.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/gfx_maxtouch_controller.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/HarmonyCore.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/legato_gfx_pda_tm4301b.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/le_gfx_driver_lcc.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/peripheral_usb_0.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/project.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/rtc.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sercom0.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sqi1.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sys_input.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/sys_time.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/tcc0.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/tcc9.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/usb_device.yml</itemPath>
-        <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/lcc_rgb565_mxt_cz_ca80_cu_uart.mhc/usb_device_cdc.yml</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-      <itemPath>legato_x_r_cz_ca80_cu_tm4301b.mc3</itemPath>
-      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/pin_configurations.csv</itemPath>
-      <itemPath>../src/config/lcc_rgb565_mxt_cz_ca80_cu_uart/harmony-manifest-success.yml</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -903,14 +902,14 @@
         <targetDevice>PIC32CZ8110CA80208</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ri4hybrid</platformTool>
+        <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.10</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
+        <pack name="PIC32CZ-CA80_DFP" vendor="Microchip" version="1.2.150"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
-        <pack name="PIC32CZ-CA80_DFP" vendor="Microchip" version="1.0.17"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1226,6 +1225,12 @@
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
@@ -1234,7 +1239,10 @@
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="freeze.timers" value="false"/>
         <property key="hwtoolclock.clock.frequency" value="4"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="hwtoolclock.instructionspeed" value="4"/>
@@ -1246,6 +1254,7 @@
         <property key="memories.configurationmemory2" value="true"/>
         <property key="memories.dataflash" value="true"/>
         <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
         <property key="memories.instruction.ram" value="true"/>
@@ -1267,7 +1276,7 @@
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
-                  value="${programoptions.preservedataflash.ranges}"/>
+                  value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -1277,6 +1286,8 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programefuse" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"
@@ -1293,6 +1304,65 @@
         <property key="voltagevalue" value="3.25"/>
         <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
       </Tool>
+      <pkob4hybrid>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.interface.jtag" value="2wire"/>
+        <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="debugoptions.simultaneous.debug" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0-9fffffff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/microchip/harmony3/harmony_gfx_apps_pic32cz_ca/apps/legato_ext_res/firmware/legato_x_r_cz_ca80_cu_tm4301b.X/debug/lcc_rgb565_mxt_cz_ca80_cu_uart/legato_x_r_cz_ca80_cu_tm4301b_ptg"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+        <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
+      </pkob4hybrid>
       <ri4hybrid>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
@@ -1304,7 +1374,9 @@
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="hwtoolclock.clock.frequency" value="4"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="hwtoolclock.instructionspeed" value="4"/>
@@ -1324,8 +1396,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-9fffffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/HarmonyProjects/harmony_gfx_apps_pic32cz_ca/apps/legato_ext_res/firmware/legato_x_r_cz_ca80_cu_tm4301b.X/debug/lcc_rgb565_mxt_cz_ca80_cu_uart/legato_x_r_cz_ca80_cu_tm4301b_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>
@@ -1347,6 +1417,8 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programefuse" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"

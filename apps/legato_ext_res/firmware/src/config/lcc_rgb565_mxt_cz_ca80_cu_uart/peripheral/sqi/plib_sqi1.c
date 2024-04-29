@@ -45,9 +45,13 @@
 
 #define SQI1_CFG_CHIP_SELECT         (0x3 << SQI1CFG_CSEN_POSITION)
 
-static SQI_EVENT_HANDLER SQI1EventHandler = NULL;
+typedef struct
+{
+    SQI_EVENT_HANDLER EventHandler;
+    uintptr_t Context;
+}sqiCallbackObjType;
 
-static uintptr_t SQI1Context = (uintptr_t)NULL;
+volatile static sqiCallbackObjType SQI1CallbackObj;
 
 void SQI1_Initialize(void)
 {
@@ -131,12 +135,13 @@ void SQI1_XIPSetup(uint32_t sqiXcon1Val, uint32_t sqiXcon2Val)
 
 void SQI1_RegisterCallback(SQI_EVENT_HANDLER event_handler, uintptr_t context)
 {
-    SQI1EventHandler = event_handler;
-    SQI1Context      = context;
+    SQI1CallbackObj.EventHandler = event_handler;
+    SQI1CallbackObj.Context      = context;
 }
 
-void SQI1_InterruptHandler(void)
+void __attribute__((used)) SQI1_InterruptHandler(void)
 {
+    uintptr_t context_var;
     SQI1_REGS->SQI_INTFLAG          = SQI_INTFLAG_SQI_Msk;
 
     if (((SQI1_REGS->SQI_INTSTAT & SQI_INTSTAT_PKTCOMPIF_Msk) != 0U) || ((SQI1_REGS->SQI_INTSTAT & SQI_INTSTAT_BDDONEIF_Msk) != 0U))
@@ -152,9 +157,10 @@ void SQI1_InterruptHandler(void)
         // Disable DMA
         SQI1_REGS->SQI_BDCON        = 0x0;
 
-        if (SQI1EventHandler != NULL)
+        if (SQI1CallbackObj.EventHandler != NULL)
         {
-            SQI1EventHandler(SQI1Context);
+            context_var = SQI1CallbackObj.Context;
+            SQI1CallbackObj.EventHandler(context_var);
         }
     }
 }

@@ -19,7 +19,7 @@ The following applications are provided to demonstrate both basic and advanced G
 
 This application demonstrates parallax and sprite animation capabilities using the graphics library.
 
-![](./../docs/html/legato_adventure.png)
+![](./../images/legato_adventure.png)
 
 * [Legato Benchmark](./legato_benchmark/readme.md)
 
@@ -31,13 +31,13 @@ This application shows the frame update rates for various operations in the grap
 
 This demonstration erves as an external memory programmer to flash the off-chip non-volatile memory and then reading both internal and external non-volatile memory (NVM) to display images, strings, and multiple fonts.
 
-![](./../docs/html/IntroScreen.png)
+![](./../images/IntroScreen.png)
 
 * [Legato Quickstart](./legato_quickstart/readme.md)
 
 This application provides a touch-enabled starting point for the legato graphics library.
 
-![](./../docs/html/legato_quickstart.png)
+![](./../images/legato_quickstart.png)
 
 ## Blank Library Examples
 
@@ -45,5 +45,5 @@ This application provides a touch-enabled starting point for the legato graphics
 
 This demonstration provides a starting point to integrate a third-party graphics library with MPLAB Harmony Graphics Suite.
 
-![](./../docs/html/blank_quickstart.png)
+![](./../images/blank_quickstart.png)
 

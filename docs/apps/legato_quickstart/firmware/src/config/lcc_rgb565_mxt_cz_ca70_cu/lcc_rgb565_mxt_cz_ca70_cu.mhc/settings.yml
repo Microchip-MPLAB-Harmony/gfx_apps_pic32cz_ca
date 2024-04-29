@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: lcc_rgb565_mxt_cz_ca70_cu
+folderName: legato_qs_cz_ca70_cu_wqvga
+frameworkPath: C:\harmony3_dev
+processor: ATSAMV71Q21B
+projectName: legato_qs_cz_ca70_cu_wqvga
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\SAMV71_DFP\4.9.117\samv71b\atdf\ATSAMV71Q21B.atdf
